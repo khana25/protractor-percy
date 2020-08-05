@@ -1,0 +1,17 @@
+{
+  "name": "protractor-percy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webdriver-update": "webdriver-manager update --gecko false --standalone false",
+    "install": "npm run webdriver-update || npm run webdriver-update",
+    "test": "percy exec -- protractor conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@percy/protractor": "^1.1.0",
+    "protractor": "^7.0.0"
+  }
+}
